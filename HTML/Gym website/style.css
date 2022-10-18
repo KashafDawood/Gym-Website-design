@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.h_container {
+    background-color: rgb(253, 252, 252);
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    flex-basis: 10%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar {
+    flex-basis: 80%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    letter-spacing: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+nav ul li a:hover{
+    color: #c4306b;
+    cursor: pointer;
+}
+
+.nav_button {
+    flex-basis: 10%;
+    border: none;
+    text-align: center;
+}
+
+#navbtn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.nav_button a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+#navbtn {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    background-color: #c4306b;
+}
+
+/* home banner */
+
+.banner{
+    background: linear-gradient(rgba(250, 21, 128, 0.116),rgba(252, 12, 124, 0.267)), url(banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner_title{
+    color: white;
+    padding: 300px 0;
+    padding-left: 50px;
+}
+
+.banner h1 span {
+    color: #ff0aa1;
+}
+
+.banner h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.banner h4{
+    position: relative;
+    top: -25;
+    left: 10;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.bannerbtn button{
+    position: relative;
+    top: -15px;
+    left: 10px;
+    padding: 15px 30px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.bannerbtn button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* content grid */
+.content_container {
+    position: relative;
+    top: -100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box_left1 {
+    background: url(grid_img1.webp);
+    background-size: cover;
+    background-position: center;
+    height: 622px;
+    background-repeat: no-repeat;
+}
+
+.box_right1 {
+    background-color: white;
+    padding: 200px 20%;
+}
+
+.gridbox_content1 h1 {
+    font-size: 25px;
+}
+
+.gridbox_content1 p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.gridbox_content1 button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.gridbox_content1 button:hover {
+    cursor: pointer;
+    background-color: #c4306b;
+    color: white;
+    border: 1px solid white;
+}
+
+.box_left2 {
+    background-color: white;
+    padding: 200px 20%;
+}
+
+.gridbox_content2 h1 {
+    font-size: 25px;
+}
+
+.gridbox_content2 p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.gridbox_content2 button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.gridbox_content2 button:hover {
+    cursor: pointer;
+    background-color: #c4306b;
+    color: white;
+    border: 1px solid white;
+}
+
+.box_right2 {
+    background: url(grid_img2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 622px;
+    background-repeat: no-repeat;
+}
+
+/* facilities */
+.g_container {
+    width: 100%;
+    height: 800px;
+    background-color: #c4306b;
+}
+
+.g_title {
+    color: white;
+    text-align: center;
+    padding: 60px 35%;
+}
+
+.g_title p {
+    font-weight: 200;
+}
+
+.g_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.g_box1 {
+    background: url(swim.jpg);
+    height: 400px;
+    background-position: 0 400px;
+    background-size: cover;
+}
+
+.g_box2 {
+    background: url(locker.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.g_box3 {
+    background: url(equipment.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+#g_box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.g_btn {
+    text-align: center;
+}
+
+.g_btn button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 0px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.g_btn button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* footer */
+
+/* address & copyrights */
+.f_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 700px;
+}
+
+.f_box1 {
+    padding: 60px 30%;
+}
+
+.f_box1 img {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icons .fb {
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+}
+
+.icons .insta {
+    position: relative;
+    top: -3;
+    height: 25px;
+    width: 25px;
+    margin-top: 30px;
+}
+
+.icons .twitter {
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+}
+
+.copyrights {
+    position: relative;
+    top: 250px;
+}
+
+.f_box2 {
+    padding: 60px 5%;
+}
+
+form h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form p {
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+
+form label {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.form_name {
+    display: flex;
+}
+
+.first_name {
+    flex-basis: 50%;
+}
+
+.first_name input {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 5px;
+}
+
+.last_name input {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 5px;
+}
+
+form #email {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 5px;
+}
+
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 5px;
+}
+
+form button {
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #c4306b;
+    color: white;
+    border-radius: 30px;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.f_box3 {
+    padding: 60px 20%;
+}
+
+.f_box3 h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.f_box3 ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.f_box3 ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.f_box3 ul li a:hover {
+    cursor: pointer;
+    color: #c4306b;
+}
+
+.f_box3 h4 a {
+    color: black;
+    position: relative;
+    top: 300px;
+}
